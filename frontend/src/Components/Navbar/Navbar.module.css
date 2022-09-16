@@ -30,7 +30,8 @@
 }
 .img {
    border: none;
-   width: 18rem;
+   width: 5rem;
+   height: auto;
    cursor: pointer;
 }
 

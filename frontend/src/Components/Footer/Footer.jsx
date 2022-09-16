@@ -58,7 +58,7 @@ function Footer() {
                   <Link to={'/privacy'}>Privacy policy</Link>
                   <br />
                </LinksBox>
-               <span style={{ color: 'white' }}>&copy; 2022 Yachtimeapp</span>
+               <span style={{ color: 'white' }}>&copy; 2022 Miami Bay Boat Rentals</span>
             </FooterBox>
          </Foot>
       </Box>

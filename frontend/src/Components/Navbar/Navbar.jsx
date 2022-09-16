@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo/logoYT.png';
+import logo from './logo/BOATRENTALM.png';
 import style from './Navbar.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { postUserGoogle } from '../../Redux/Actions/actions';
@@ -97,7 +97,7 @@ function Navbar() {
                   <li>
                      <a
                         className={style.enlace}
-                        href='https://www.facebook.com/Yatchtimeapp-104930065485155/'
+                        href='https://www.facebook.com/boat.rental.148'
                         target='_blank'
                         rel='noreferrer'
                      >
@@ -107,7 +107,7 @@ function Navbar() {
                   <li>
                      <a
                         className={style.enlace}
-                        href='https://www.instagram.com/yatchtimeapp/'
+                        href='https://instagram.com/boatmiamirental?igshid=YmMyMTA2M2Y='
                         target='_blank'
                         rel='noreferrer'
                      >

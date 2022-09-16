@@ -43,7 +43,7 @@ function App() {
    return (
       <div className='App'>
          {!aux && (
-            <a href='https://wa.link/4gi1p8' target='_blank' rel='noreferrer'>
+            <a href='https://walink.co/77da43' target='_blank' rel='noreferrer'>
                <WppAvatar>
                   <WhatsAppIcon sx={{ fontSize: 50 }} />
                </WppAvatar>

@@ -26,9 +26,9 @@ function ContactUs() {
          <DataBox>
             <h3 style={{ color: 'white', fontSize: '2rem' }}>Contact</h3>
             <h3 style={{ color: 'white', fontSize: '2rem' }}>
-               +1 786-721-2525
+            +1 (305) 960-5180
             </h3>
-            <DataGraphy>3300 NW 21st St, Miami, FL 33142</DataGraphy>
+            <DataGraphy>401 Biscayne Blvd, Miami, FL 33132</DataGraphy>
             <p
                style={{
                   color: 'white',
@@ -36,14 +36,14 @@ function ContactUs() {
                   marginBottom: '-0.01rem',
                }}
             >
-               United States
+               marina de Bayside miami
             </p>
             <br></br>
          </DataBox>
 
          <Box>
             <iframe
-               src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.2598245325494!2d-80.25231148565965!3d25.79500091351838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bb1cd85cc52f%3A0x6c3c779175916b87!2sYachtime%20Miami!5e0!3m2!1ses!2sar!4v1653417999814!5m2!1ses!2sar'
+               src=      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.73788533416!2d-80.1865475!3d25.7792199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b69fdcd6168d%3A0x9e703d1868f3ea29!2sMiamarina%20At%20Bayside!5e0!3m2!1ses-419!2sus!4v1663288115659!5m2!1ses-419!2sus"
                style={{
                   border: '0',
                   width: '100vw',
