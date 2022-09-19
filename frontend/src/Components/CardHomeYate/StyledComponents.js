@@ -23,8 +23,8 @@ export const ChargingContainer = styled(Box)`
 `;
 
 export const Card = styled(Box)`
-   width: 33vw;
-   height: 35vh;
+   width: 49.5vw;
+   height: auto;
    background-size: cover;
    background-position-y: 30%;
    transition: 2s;

@@ -24,6 +24,8 @@ import { UserSite } from './Components/userSite/UserSite.js';
 import { useAuth0 } from '@auth0/auth0-react';
 import { postUserGoogle } from './Redux/Actions/actions';
 import iconx from './img/iconoX.png'
+
+
 function App() {
    const dispatch = useDispatch();
    const { user } = useAuth0();

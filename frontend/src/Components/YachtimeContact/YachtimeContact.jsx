@@ -37,72 +37,15 @@ function YachtimeContact() {
                   <SiInstagram className={style.instagram} />
                </a>
             </div>
-            <div className={style.staff}>
-               <img src={david} alt='david' className={style.img} />
-               <span>David G.</span>
-               <h3>COO\Founder</h3>
-               <a href='https://instagram.com/davidgarciabaquero?r=nametag'>
-                  <SiInstagram className={style.instagram} />
-               </a>
-            </div>
-            <div className={style.staff}>
-               <img src={valeria} alt='valeria' className={style.img} />
-               <span>Valeria F.</span>
-               <h3>Concierge</h3>
-               <a href='https://www.instagram.com/valeriafainsodc/'>
-                  <SiInstagram className={style.instagram} />
-               </a>
-            </div>
-            <div className={style.staff}>
-               <img src={diego} alt='diego' className={style.img} />
-               <span>Diego C.</span>
-               <h3>Concierge</h3>
-               <a href='https://www.instagram.com/diegooocorrales/'>
-                  <SiInstagram className={style.instagram} />
-               </a>
-            </div>
          </div>
          <AllCardsBox>
             <CardBox>
                <img src={angel} alt='angel' className={style.img} />
-               <span style={{ color: 'white' }}>Angel L.</span>
-               <h3 style={{ color: 'white' }}>CEO\Founder</h3>
+               <span style={{ color: '#434545' }}>Angel L.</span>
+               <h3 style={{ color: '#434545' }}>CEO\Founder</h3>
                <a href='https://instagram.com/angellimongi?igshid=YmMyMTA2M2Y='>
                   <SiInstagram
-                     style={{ color: 'white' }}
-                     className={style.instagram}
-                  />
-               </a>
-            </CardBox>
-            <CardBox>
-               <img src={david} alt='david' className={style.img} />
-               <span style={{ color: 'white' }}>David G.</span>
-               <h3 style={{ color: 'white' }}>COO\Founder</h3>
-               <a href='https://instagram.com/davidgarciabaquero?r=nametag'>
-                  <SiInstagram
-                     style={{ color: 'white' }}
-                     className={style.instagram}
-                  />
-               </a>
-            </CardBox>
-            <CardBox>
-               <img src={valeria} alt='valeria' className={style.img} />
-               <span style={{ color: 'white' }}>Valeria F.</span>
-               <h3 style={{ color: 'white' }}>Concierge</h3>
-               <a href='https://www.instagram.com/valeriafainsodc/'>
-                  <SiInstagram
-                     style={{ color: 'white' }}
-                     className={style.instagram}
-                  />
-               </a>
-            </CardBox>
-            <CardBox>
-               <img src={diego} alt='diego' className={style.img} />
-               <span style={{ color: 'white' }}>Diego C.</span>
-               <h3 style={{ color: 'white' }}>Concierge</h3>
-               <a href='https://www.instagram.com/diegooocorrales/'>
-                  <SiInstagram
-                     style={{ color: 'white' }}
+                     style={{ color: '#434545' }}
                      className={style.instagram}
                   />
                </a>
@@ -119,10 +62,10 @@ function YachtimeContact() {
 
                <DataBox>
                   <NumberGraphy>+1 (305) 960-5180</NumberGraphy>
-                  <span style={{ color: 'white' }}>
+                  <span style={{ color: '#434545' }}>
                   401 Biscayne Blvd, Miami, FL 33132
                   </span>
-                  <p style={{ color: 'white' }}>marina de Bayside miami</p>
+                  <p style={{ color: '#434545' }}>marina de Bayside miami</p>
                </DataBox>
             </MapContainer>
          )}

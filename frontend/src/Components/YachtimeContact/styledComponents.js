@@ -40,7 +40,7 @@ export const DataBox = styled(Box)`
 `;
 
 export const NumberGraphy = styled(Typography)`
-   color: white;
+   color: #434545;
    font-weight: 400;
    font-size: 1rem;
 `;
@@ -60,7 +60,7 @@ export const CardBox = styled(Box)`
    width: 50%;
    align-items: center;
    justify-content: center;
-   background-color: #222;
+   background-color: #ffddc9;
    margin-top: 0.5rem;
    margin-top: 0.5rem;
 `;
