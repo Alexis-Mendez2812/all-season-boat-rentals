@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './Components/Login/Login.jsx';
+// import Login from './Components/Login/Login.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import Home from './Components/Home/Home.jsx';
 import Navbar from './Components/Navbar/Navbar';
 import { WppAvatar } from './Components/Home/styledComponents';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { LoginForm } from './Components/Login/LoginForm.jsx';
-import { RegisterForm } from './Components/Login/RegisterForm.jsx';
+// import { LoginForm } from './Components/Login/LoginForm.jsx';
+// import { RegisterForm } from './Components/Login/RegisterForm.jsx';
 import Loading from './Components/Loading/Loading.jsx';
 import { Profile } from './Components/Login/Profile.jsx';
 import NewProduct from './Components/NewProduct/NewProduct.jsx';
@@ -20,10 +20,11 @@ import Service from './Components/Service/Service';
 import PayPal from './Components/PayPal/PayPal';
 import CardDetail from './Components/CardDetail/CardDetail.jsx';
 import Pay from './Components/Pay/Pay.jsx';
+import Faq from './Components/Faq/Faq.jsx';
 import { UserSite } from './Components/userSite/UserSite.js';
 import { useAuth0 } from '@auth0/auth0-react';
 import { postUserGoogle } from './Redux/Actions/actions';
-import iconx from './img/iconoX.png'
+// import iconx from './img/iconoX.png'
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
          <BrowserRouter>
             <Routes>
                <Route path='/privacy' element={<Privacy />} />
+               <Route path='/FAQ' element={<Faq />} />
                <Route path='/service' element={<Service />} />
                <Route path='/paypal' element={<PayPal />} />
                <Route path='/admin' element={<Admin />} />

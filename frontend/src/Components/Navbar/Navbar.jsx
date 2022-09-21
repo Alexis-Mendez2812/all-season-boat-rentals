@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo/BOATRENTALM.png';
+import logo from './logo/logo.png';
 import style from './Navbar.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { postUserGoogle } from '../../Redux/Actions/actions';
@@ -77,13 +77,29 @@ function Navbar() {
                   >
                      Dashboard
                   </li>
-                  <li
+                  {/* <li
                      onClick={() => {
                         handleChangeView('/membership');
                      }}
                      className={style.enlace}
                   >
                      Membership
+                  </li> */}
+                  <li
+                     onClick={() => {
+                        handleChangeView('/FAQ');
+                     }}
+                     className={style.enlace}
+                  >
+                     FAQ
+                  </li>
+                  <li
+                     onClick={() => {
+                        handleChangeView('/ourFleet');
+                     }}
+                     className={style.enlace}
+                  >
+                     Our Fleet
                   </li>
                   <li
                      onClick={() => {
@@ -123,7 +139,7 @@ function Navbar() {
                   ) : (
                      <li>
                         <Box onClick={()=>loginWithRedirect()} className={style.enlace}>
-                           <i class='fa-solid fa-arrow-right-to-bracket'></i>
+                           <i className='fa-solid fa-arrow-right-to-bracket'></i>
                         </Box>
                      </li>
                   )}
