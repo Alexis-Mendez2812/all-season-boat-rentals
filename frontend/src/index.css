@@ -24,7 +24,7 @@ body {
       'Helvetica Neue', sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   background-color: #ffddc9;
+   background-color:#e3dac9;
    box-sizing: border-box;
 }
 /**
@@ -369,7 +369,7 @@ template {
    align-content: space-between;
    width: 50%;
    height: 10%;
-   background-color: #fff;
+   background-color: #e3dac9;
    border-radius: 30px;
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
    padding: 20px;
@@ -387,5 +387,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-   background-color: #ffddc9;
+   background-color: #e3dac9;
 }

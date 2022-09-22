@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dangrek&display=swap');
+
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	padding: 0;   
+    background-image: url('./fondo3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+    justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+    color:#fff;
+    background-color: #15366796;
+    margin-bottom: 20px;
+
+}
+h3{
+    font-family: 'Dangrek', cursive;
+    font-size: 1.5rem;
+}
+.answer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+	background-color: #1870af00;
+	margin-bottom: 20px;
+}
+.answerText {
+	background-color: #15366796;
+    width: 75%;
+	color: white;
+}
+
+.video{
+width:30%;
+}
+.video video {
+
+	border-radius: 50%;
+}
+
+.triangulo {
+	width: 0;
+	height: 0;
+	border-left: 50px solid #15366796;
+	border-top: 100px solid transparent;
+	border-bottom: 100px solid transparent;
+}
