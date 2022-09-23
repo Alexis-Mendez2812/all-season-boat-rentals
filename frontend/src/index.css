@@ -24,7 +24,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #d5d7d9;
+	background-color: #bfd9d8;
 	box-sizing: border-box;
 }
 /**
@@ -387,5 +387,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-	background-color: #d5d7d9;
+	background-color: #bfd9d8bb;
 }

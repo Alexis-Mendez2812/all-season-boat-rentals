@@ -55,28 +55,27 @@ function App() {
 
          <BrowserRouter>
             <Routes>
-               <Route path='/privacy' element={<Privacy />} />
-               <Route path='/FAQ' element={<Faq />} />
-               <Route path='/service' element={<Service />} />
-               <Route path='/paypal' element={<PayPal />} />
                <Route path='/admin' element={<Admin />} />
-               <Route path='/Uploading' element={<Uploading />} />
-               <Route path='/newproduct' element={<NewProduct />} />
-               <Route path='/profile' element={<Profile />} />
+               <Route path='/CardDetail/:id' element={<CardDetail />} />
                <Route path='/contactUs' element={<ContactUs />} />
-               <Route path='/membership' element={<Membership />} />
+               <Route path='/FAQ' element={<Faq />} />
                <Route path='/loading' element={<Loading />} />
+               <Route path='/membership' element={<Membership />} />
+               <Route path='/newproduct' element={<NewProduct />} />
+               <Route path='/paypal' element={<PayPal />} />
+               <Route path='/paypal/pay/:mount' element={<Pay />} />
+               <Route path='/privacy' element={<Privacy />} />
+               <Route path='/profile' element={<Profile />} />
+               <Route path='/service' element={<Service />} />
+               <Route path='/Uploading' element={<Uploading />} />
+               <Route path='usersite/newproduct/:id' element={<NewProduct />} />
+               <Route path='/userSite' element={<UserSite />} />
+               <Route path='/userSite/*' element={<UserSite />} />
                {/* <Route path='/login' element={<Login />} /> */}
                {/* <Route path='/loginForm' element={<LoginForm />} /> */}
                {/* <Route path='/registerForm' element={<RegisterForm />} /> */}
                <Route exact path='/' element={<Home />} />
                <Route path='/' element={<Navbar />} />
-               <Route path='/newproduct' element={<NewProduct />} />
-               <Route path='usersite/newproduct/:id' element={<NewProduct />} />
-               <Route path='/CardDetail/:id' element={<CardDetail />} />
-               <Route path='/paypal/pay/:mount' element={<Pay />} />
-               <Route path='/userSite' element={<UserSite />} />
-               <Route path='/userSite/*' element={<UserSite />} />
                <Route path='*' element={<Home />} />
             </Routes>
          </BrowserRouter>

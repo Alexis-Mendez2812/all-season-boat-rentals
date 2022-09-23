@@ -17,6 +17,10 @@ export const DataBox = styled(Box)`
 export const Firma = styled(Box)`
 	width: 100%;
 	height: auto;
+	margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+	margin:20px;
 `;
 export const Carta = styled(Box)`
 	width: 100%;
@@ -34,7 +38,7 @@ export const Carta = styled(Box)`
 `;
 
 export const DataGraphy = styled(Typography)`
-	color: white;
+	color: #000;
 	font-size: 2rem;
 	margin-bottom: -0.01rem;
 

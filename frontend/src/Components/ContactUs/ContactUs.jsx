@@ -7,7 +7,7 @@ import { WppAvatar } from "../Home/styledComponents";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useSelector } from "react-redux";
 import firma from "./firma.png";
-import firma2 from "./firma2.png";
+import firma3 from "./firma3.png";
 function ContactUs() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -26,12 +26,12 @@ function ContactUs() {
 				</a>
 			)}
 			<DataBox>
-				<h3 style={{ color: "white", fontSize: "2rem" }}>Contact</h3>
-				<h3 style={{ color: "white", fontSize: "2rem" }}>+1 (305) 960-5180</h3>
+				<h3 style={{ color: "#000", fontSize: "2rem" }}>Contact</h3>
+				<h3 style={{ color: "#000", fontSize: "2rem" }}>+1 (305) 960-5180</h3>
 				<DataGraphy>401 Biscayne Blvd, Miami, FL 33132</DataGraphy>
 				<p
 					style={{
-						color: "white",
+						color: "#000",
 						fontSize: "2rem",
 						marginBottom: "-0.01rem",
 					}}
@@ -56,8 +56,8 @@ function ContactUs() {
 			</Box>
 			<div
 				style={{
-					color: "#fff",
-					backgroundColor: "#000",
+					color: "#000",
+					backgroundColor: "#00000000",
 					fontSize: "2rem",
 				}}
 			>
@@ -80,7 +80,7 @@ function ContactUs() {
 						from the masses.
 					</p>
 					<Firma>
-						<img src={firma2} alt="firma.png" width="70%" />
+						<img src={firma3} alt="firma.png" width="70%" />
 					</Firma>
 				</Carta>
 			</div>

@@ -28,7 +28,9 @@
    color: #434545;
    width: 250px;
    height: 300px;
-   background-color: #ffddc9;
+   background-color: #8ad8d6;
+   -webkit-box-shadow: 6px 6px 18px 6px rgba(0,0,0,0.77); 
+box-shadow: 6px 6px 18px 6px rgba(0,0,0,0.77);
 }
 
 .staff > a {

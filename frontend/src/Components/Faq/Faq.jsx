@@ -2,9 +2,14 @@ import React from "react";
 import "./styles.css";
 import video from "./videoBrujula.mp4";
 import ReactPlayer from "react-player";
+import Navbar from "../Navbar/Navbar";
 export default function GameDetail() {
 	return (
 		<div className="container">
+			<div>
+
+			<Navbar />
+			</div>
             <div className="header" >
 
 			<div className="video">
