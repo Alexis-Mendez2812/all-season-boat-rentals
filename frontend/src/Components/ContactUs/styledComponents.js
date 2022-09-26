@@ -23,6 +23,12 @@ export const Firma = styled(Box)`
 	justify-content: flex-end;
 	margin: 20px;
 `;
+export const Tarjeta = styled(Box)`
+	width: 100%;
+	height: auto;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+`;
 export const Carta = styled(Box)`
 	width: 100%;
 	height: auto;
