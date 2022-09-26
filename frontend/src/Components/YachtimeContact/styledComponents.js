@@ -64,7 +64,7 @@ export const CardBox = styled(Box)`
 	width: 50%;
 	align-items: center;
 	justify-content: center;
-	background-color: #8ad8d6;
+	background-color: #060073;
 	margin-top: 0.5rem;
 	margin-top: 0.5rem;
 	-webkit-box-shadow: 6px 6px 18px 6px rgba(0,0,0,0.77); 
