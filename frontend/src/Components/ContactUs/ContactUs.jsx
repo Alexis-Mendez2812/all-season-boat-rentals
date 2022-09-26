@@ -7,7 +7,7 @@ import { WppAvatar } from "../Home/styledComponents";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useSelector } from "react-redux";
 import firma from "./firma.png";
-import firma3 from "./firma3.png";
+import firma3 from "./firma2.png";
 function ContactUs() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -80,7 +80,7 @@ function ContactUs() {
 						from the masses.
 					</p>
 					<Firma>
-						<img src={firma3} alt="firma.png" width="70%" />
+						<img src={firma3} alt="firma2.png" width="50%" />
 					</Firma>
 				</Carta>
 			</div>

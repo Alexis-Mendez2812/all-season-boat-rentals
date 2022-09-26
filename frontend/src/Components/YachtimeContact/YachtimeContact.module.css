@@ -25,10 +25,10 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   color: #434545;
+   color: #EEEFEF;
    width: 250px;
    height: 300px;
-   background-color: #8ad8d6;
+   background-color: #060073;
    -webkit-box-shadow: 6px 6px 18px 6px rgba(0,0,0,0.77); 
 box-shadow: 6px 6px 18px 6px rgba(0,0,0,0.77);
 }
@@ -41,6 +41,7 @@ box-shadow: 6px 6px 18px 6px rgba(0,0,0,0.77);
 
 .instagram {
    font-size: 30px;
+   color: #EEEFEF;
 }
 
 .divUbicacion {

@@ -6,12 +6,17 @@ import Navbar from "../Navbar/Navbar";
 export default function GameDetail() {
 	return (
 		<div className="container">
-			<div>
+		<div className="navBar">
 
 			<Navbar />
 			</div>
             <div className="header" >
 
+            <div className="headerTitle" >
+			<h1>Frequently Asked Questions</h1>
+						<p>+1 305 992 0643</p>
+            
+			</div>
 			<div className="video">
 				<ReactPlayer
 					url={video}
@@ -22,14 +27,6 @@ export default function GameDetail() {
 					height="auto"
                     
                     />
-			</div>
-            
-			<div>
-			<h2>HAVE ANY QUESTIONS?</h2>
-			<p>(331)-304-8779</p>
-			</div>
-			<div>
-			<h1>Frequently Asked Questions</h1>
 			</div>
                     </div>
 

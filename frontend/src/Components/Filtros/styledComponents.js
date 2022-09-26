@@ -9,7 +9,7 @@ export const Container = styled(Box)`
 `;
 
 export const FilterBox = styled(Box)`
-   background-color:  #19253a;
+   background-color:  #153b67;
    color:  #908b80;
    width: 30%;
    height: 100%;
@@ -42,7 +42,7 @@ export const Select = styled('select')`
    outline: none;
    border: 0vh;
    width: 100%;
-   background-color: #19253a;  
+   background-color: #153b67;  
    color: #43b2e6;
    height: 3rem;
    padding-left: 3rem;
@@ -59,7 +59,7 @@ export const Select = styled('select')`
 
 export const ResetButton = styled(Box)`
    width: 25%;
-   background-color: #19253a;
+   background-color: #153b67;
    height: 100%;
    display: flex;
    justify-content: center;
@@ -67,7 +67,7 @@ export const ResetButton = styled(Box)`
    cursor: pointer;
    font-size: 1.5rem;
    font-weight: 500;
-   color: #bb0e0e;
+   color: #EEEFEF;
 
    @media (max-width: 768px) {
       font-size: none;
@@ -78,7 +78,7 @@ export const Option = styled('option')`
    font-size: 1.5rem;
    font-weight: 400;
    color: #43b2e6;
-   background-color: #19253a;
+   background-color: #153b67;
    text-transform: uppercase;
 
    @media (max-width: 768px) {

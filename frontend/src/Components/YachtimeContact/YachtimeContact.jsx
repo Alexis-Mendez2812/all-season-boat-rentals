@@ -41,11 +41,11 @@ function YachtimeContact() {
 			<AllCardsBox>
 				<CardBox>
 					<img src={angel} alt="angel" className={style.img} />
-					<span style={{ color: "#434545" }}>Angel L.</span>
-					<h3 style={{ color: "#434545" }}>CEO\Founder</h3>
+					<span style={{ color: "#EEEFEF" }}>Angel L.</span>
+					<h3 style={{ color: "#EEEFEF" }}>CEO\Founder</h3>
 					<a href="https://instagram.com/angellimongi?igshid=YmMyMTA2M2Y=">
 						<SiInstagram
-							style={{ color: "#434545" }}
+							style={{ color: "#EEEFEF" }}
 							className={style.instagram}
 						/>
 					</a>

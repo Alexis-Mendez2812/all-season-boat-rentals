@@ -22,7 +22,7 @@ function Footer() {
 
 	return (
 		<Box>
-			<div className={style.imgMembership}>
+			{/* <div className={style.imgMembership}>
 				<PicBox>
 					<Get>Get the</Get>
 					<M>MemberShip</M>
@@ -35,7 +35,7 @@ function Footer() {
 						<ButtonGet onClick={handleGoToMembership}>GET IT NOW</ButtonGet>
 					</a>
 				</PicBox>
-			</div>
+			</div> */}
 			<Foot>
 				<FooterBox>
 					<AppPics>

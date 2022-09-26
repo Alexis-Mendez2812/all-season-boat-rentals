@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import carta from "./carta2.png";
+import carta from "./bubble.jpg";
+import carta2 from "./mobile.jpeg";
 /*--------------------------------------------------------*/
 export const DataBox = styled(Box)`
 	margin-top: 5rem;
@@ -18,9 +19,9 @@ export const Firma = styled(Box)`
 	width: 100%;
 	height: auto;
 	margin-right: 50px;
-    display: flex;
-    justify-content: flex-end;
-	margin:20px;
+	display: flex;
+	justify-content: flex-end;
+	margin: 20px;
 `;
 export const Carta = styled(Box)`
 	width: 100%;
@@ -35,6 +36,14 @@ export const Carta = styled(Box)`
 	align-items: center;
 	-webkit-box-shadow: 1px 1px 19px 12px rgba(0, 0, 0, 0.83);
 	box-shadow: 1px 1px 19px 12px rgba(0, 0, 0, 0.83);
+	color: #eeefef;
+	font-size: 1rem;
+	@media (max-width: 768px) {
+		background-image: url(${carta2});
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-attachment: fixed;
+	}
 `;
 
 export const DataGraphy = styled(Typography)`

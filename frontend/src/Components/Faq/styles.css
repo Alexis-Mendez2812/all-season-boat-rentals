@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dangrek&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dangrek&display=swap");
 
 .container {
 	display: flex;
@@ -10,28 +8,28 @@
 	justify-content: center;
 	align-items: flex-start;
 	width: 100%;
-	padding: 0;   
-    background-image: url('./fondo3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+	padding: 0;
+	background-image: url("./fondo3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .header {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	align-content: center;
-    justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 	width: 100%;
 	padding: 0;
-    color:#fff;
-    background-color: #15366796;
-    margin-bottom: 20px;
-
+	color: #fff;
+	background-color: #15366796;
+	margin-bottom: 20px;
+	margin-top: 5rem;
 }
-h3{
-    font-family: 'Dangrek', cursive;
-    font-size: 1.5rem;
+h3 {
+	font-family: "Dangrek", cursive;
+	font-size: 1.5rem;
 }
 .answer {
 	display: flex;
@@ -43,15 +41,15 @@ h3{
 }
 .answerText {
 	background-color: #15366796;
-    width: 70%;
+	width: 70%;
 	color: white;
 }
 
-.video{
-width:30%;
+.video {
+	width: 20%;
+	
 }
 .video video {
-
 	border-radius: 50%;
 }
 
@@ -61,4 +59,17 @@ width:30%;
 	border-left: 50px solid #15366796;
 	border-top: 100px solid transparent;
 	border-bottom: 100px solid transparent;
+}
+.headerTitle {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	width:60%;
+}
+.headerTitle h1 {
+	display: inline;
+	text-align: center;
 }
