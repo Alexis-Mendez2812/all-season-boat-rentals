@@ -19,6 +19,7 @@ import Membership from './Components/Membership/Membership.jsx';
 import Service from './Components/Service/Service';
 import PayPal from './Components/PayPal/PayPal';
 import CardDetail from './Components/CardDetail/CardDetail.jsx';
+import ManualCard from './Components/ManualCard/ManualCard.jsx';
 import Pay from './Components/Pay/Pay.jsx';
 import Faq from './Components/Faq/Faq.jsx';
 import { UserSite } from './Components/userSite/UserSite.js';
@@ -55,6 +56,7 @@ function App() {
 
          <BrowserRouter>
             <Routes>
+               <Route path='/yates' element={<ManualCard />} />
                <Route path='/admin' element={<Admin />} />
                <Route path='/CardDetail/:id' element={<CardDetail />} />
                <Route path='/contactUs' element={<ContactUs />} />

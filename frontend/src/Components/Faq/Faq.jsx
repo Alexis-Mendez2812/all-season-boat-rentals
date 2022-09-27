@@ -10,6 +10,7 @@ export default function GameDetail() {
 
 			<Navbar />
 			</div>
+
             <div className="header" >
 
             <div className="headerTitle" >

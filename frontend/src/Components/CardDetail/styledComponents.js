@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 /*--------------------------------------------------------*/
 export const BackIcon = styled(KeyboardBackspaceIcon)`
-   color: white;
+   color: #454545;
    font-weight: bold;
    font-size: 3vw;
    transition: 0.3s;
@@ -91,7 +91,7 @@ export const DataTitle = styled(Typography)`
    font-weight: bold;
    letter-spacing: -0.1rem;
    font-size: 4rem;
-   color: white;
+   color: #454545;
    cursor: default;
    font-weight: 500;
    font-family: monospace;
@@ -100,52 +100,63 @@ export const DataTitle = styled(Typography)`
 
 export const InfoBox = styled(Box)`
    display: flex;
-
-   @media (max-width: 768px) {
-      flex-direction: column;
-      justify-content: space-around;
-      height: 120vh;
-   }
+   flex-wrap: wrap;
+   align-items: flex-start;
+   align-content: flex-start;
+   // @media (max-width: 768px) {
+   //    flex-direction: column;
+   //    justify-content: space-around;
+   //    height: 120vh;
+   // }
 `;
 
 export const FeatureBox = styled(Box)`
-   width: 100vw;
-   height: 50vh;
-   padding: 2em;
+   min-width: 49vw;
+   height: auto;
+   padding: 1em;
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-items: center;
+   justify-content: center;
 `;
 
 export const DetailBox = styled(Box)`
-   width: 100%;
-   height: 30vh;
+min-width: 49vw;
+height: auto;
    display: flex;
    flex-direction: column;
-   flex-wrap: wrap;
+   flex-wrap: no-wrap;
+   align-items:flex-start;
+   justify-content:flex-start
 
-   @media (max-width: 768px) {
-      background-color: green;
-      height: 45vh;
-      width: 100vw;
-      margin-left: -1.6rem;
-   }
+   // @media (max-width: 768px) {
+   //    height: 45vh;
+   //    width: 100vw;
+   //    margin-left: -1.6rem;
+   // }
 `;
 
 export const Li = styled('li')`
-   color: white;
+   color: #454545;
    font-size: 1.2rem;
    margin-bottom: 0.8rem;
 `;
 
 export const TextBox = styled(Box)`
-   width: 44.5vw;
-   height: 30vh;
+min-width: 49vw;
+height: auto;
    font-size: 1.2rem;
    text-align: justify;
    line-height: 1.5rem;
-   color: white;
+   color: #454545;
+   align-self:center;
+   margin:0;
 
-   @media (max-width: 768px) {
-      width: 90vw;
-   }
+   // @media (max-width: 768px) {
+   //    width: 90vw;
+   // }
 `;
 
 export const CarPic = styled(Box)`

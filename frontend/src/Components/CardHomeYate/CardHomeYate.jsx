@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import Filtros from '../Filtros/Filtros';
 import './CardHome.css';
 import Paginado from '../Paginado/Paginado';
+import yates from '../ManualCard/yates.js';
 import { Box, CircularProgress } from '@mui/material';
 import {
    AllCardsContainer,
@@ -27,7 +28,8 @@ export default function CardHomeYate() {
    const [yatesPerPage] = useState(9);
    const indexOfLastYate = currentPage * yatesPerPage;
    const indexFirstYate = indexOfLastYate - yatesPerPage;
-   const renderYates = allYates.slice(indexFirstYate, indexOfLastYate);
+   // const renderYates = allYates.slice(indexFirstYate, indexOfLastYate);
+   const renderYates = yates
 
    const paginado = (pageNumber) => {
       setCharging(true);
