@@ -60,12 +60,12 @@ export const AllCardsBox = styled(Box)`
 export const CardBox = styled(Box)`
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 45%;
 	align-items: center;
 	justify-content: center;
 	background-color: #153b67;
-	margin-top: 0.5rem;
-	padding:1rem;
+	margin: 0.5rem;
+	padding:1rem ;
 	-webkit-box-shadow: 6px 6px 18px 6px rgba(0, 0, 0, 0.77);
 	box-shadow: 6px 6px 18px 6px rgba(0, 0, 0, 0.77);
 `;

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import style from "./YachtimeContact.module.css";
 import angel from "./staff/angel.jpg";
-import david from "./staff/david.jpg";
-import diego from "./staff/diego.jpg";
-import valeria from "./staff/valeria.jpg";
+import gian from "./staff/gian.png";
 import { SiInstagram } from "react-icons/si";
 import {
 	MapContainer,
@@ -27,7 +25,8 @@ function YachtimeContact() {
 				alignItems: "center",
 			}}
 		>
-			<h1 className={style.title}>Yachtimeapp Crew</h1>
+			<h1 className={style.title}>Allseason Crew</h1>
+			{/* version pc */}
 			<div className={style.divImages}>
 				<div className={style.staff}>
 					<img src={angel} alt="angel" className={style.img} />
@@ -37,13 +36,39 @@ function YachtimeContact() {
 						<SiInstagram className={style.instagram} />
 					</a>
 				</div>
+				<div className={style.staff}>
+					<img src={gian} alt="gian" className={style.img} />
+					<span>Gian L.</span>
+					<h3>COO</h3>
+					<a href="https://www.instagram.com/giannardulli/">
+						<SiInstagram className={style.instagram} />
+					</a>
+				</div>
 			</div>
+			{/* version celu */}
 			<AllCardsBox>
 				<CardBox>
-					<img src={angel} alt="angel" className={style.img} />
+					<img
+						src={angel}
+						id="retratoAngel"
+						alt="angel"
+						className={`${style.img} retratoAngel `}
+						style={{ padding:"7px" }}
+					/>
 					<span style={{ color: "#EEEFEF" }}>Angel L.</span>
 					<h3 style={{ color: "#EEEFEF" }}>CEO\Founder</h3>
 					<a href="https://instagram.com/angellimongi?igshid=YmMyMTA2M2Y=">
+						<SiInstagram
+							style={{ color: "#EEEFEF" }}
+							className={style.instagram}
+						/>
+					</a>
+				</CardBox>
+				<CardBox>
+					<img src={gian} alt="gian" className={style.img} />
+					<span style={{ color: "#EEEFEF" }}>Gian L.</span>
+					<h3 style={{ color: "#EEEFEF" }}>COO</h3>
+					<a href="https://www.instagram.com/giannardulli/">
 						<SiInstagram
 							style={{ color: "#EEEFEF" }}
 							className={style.instagram}
@@ -61,7 +86,7 @@ function YachtimeContact() {
 					></iframe>
 
 					<DataBox>
-						<NumberGraphy>+1 (305) 960-5180</NumberGraphy>
+						<NumberGraphy>+1 305 992 0643</NumberGraphy>
 						<span style={{ color: "#434545" }}>
 							401 Biscayne Blvd, Miami, FL 33132
 						</span>

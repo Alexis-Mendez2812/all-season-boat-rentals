@@ -7,6 +7,9 @@
 	width: 160px;
 	height: 160px;
 }
+.retratoAngel{
+	padding: 7px;
+}
 .title {
 	color: #434545;
 	margin-left: 1rem;
@@ -67,3 +70,4 @@
 		display: none;
 	}
 }
+

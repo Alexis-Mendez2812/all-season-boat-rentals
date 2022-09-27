@@ -28,7 +28,7 @@ function ContactUs() {
 			)}
 			{/* <DataBox>
 				<h3 style={{ color: "#000", fontSize: "2rem" }}>Contact</h3>
-				<h3 style={{ color: "#000", fontSize: "2rem" }}>+1 (305) 960-5180</h3>
+				<h3 style={{ color: "#000", fontSize: "2rem" }}+1 305 992 0643</h3>
 				<DataGraphy>401 Biscayne Blvd, Miami, FL 33132</DataGraphy>
 				<p
 					style={{

@@ -1,5 +1,6 @@
 import { BottomNavigation } from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import MenuIcon from '@mui/icons-material/Menu';
 import { styled } from '@mui/material/styles';
 /*--------------------------------------------------------*/
 
@@ -17,8 +18,8 @@ export const LoginButton = styled('button')`
    border: 0vh;
 `;
 
-export const ThreeDotsIcom = styled(MoreVertIcon)`
-   margin-right: -10rem;
+export const ThreeDotsIcom = styled(MenuIcon)`
+   margin-right: -8rem;
    margin-top: 0.5rem;
    color: white;
 `;
