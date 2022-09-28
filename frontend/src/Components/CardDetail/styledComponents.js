@@ -24,10 +24,8 @@ export const IconBox = styled(Box)`
 `;
 
 export const Picture = styled(Box)`
-   width: 100vw;
-   height: 90vh;
-   background-size: cover;
-   background-position-y: 50%;
+   width: auto;
+   height: auto;
    transition: 2s;
    overflow: hidden;
 `;
@@ -160,8 +158,8 @@ height: auto;
 `;
 
 export const CarPic = styled(Box)`
-   width: 100vw;
-   height: 70vh;
+   width: 80vw;
+   height: 50vh;
    background-size: cover;
    background-position-y: 50%;
 `;

@@ -36,10 +36,14 @@ import {
 import { Box, TextField } from "@mui/material";
 import { getIdYate, vaciar } from "../../Redux/Actions/actions";
 import io from "socket.io-client";
+import './CardDetail.css'
+
+
 // const socket = io.connect('https://yachtimeapp.herokuapp.com');
 const socket = io.connect("http://localhost:3001");
 
 export default function GameDetail() {
+	
 	const { id } = useParams();
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
@@ -166,10 +170,10 @@ export default function GameDetail() {
 			waterCapacity,
 			description,
 			pictures,
-         services,
-         hour,
-         fourHours,
-         eightHours
+			services,
+			hour,
+			fourHours,
+			eightHours,
 		} = yateSelected;
 		// return (
 		//    <>
@@ -271,41 +275,35 @@ export default function GameDetail() {
 		//    </>
 		// );
 		console.log(yateSelected);
-
+		
+		
 		return (
 			<>
 				<div className="div-Navbar">
 					<Navbar />
 				</div>
-				<Picture
-					style={{
-						backgroundImage: `url(${yateSelected.pictures[0]})`,
-						backgroundSize: "cover",
-						backgroundPosition: "center",
-						backgroundRepeat: "no-repeat",
-					}}
+				<div className="div-header" 
+				style={{
+					backgroundImage: `url(${yateSelected.pictures[0]})`,
+					
+				}}
 				>
-					<PictureShadow>
-						<IconBox>
-							<BackIcon onClick={handleGoBack} />
-						</IconBox>
-						<DataPictureBox>
 							<DataGraphy>
 								{yateSelected.model}' {yateSelected.make}
 							</DataGraphy>
-						</DataPictureBox>
-					</PictureShadow>
-				</Picture>
+							<BackIcon onClick={handleGoBack} />
+					{/* <img src={yateSelected.pictures[0]} /> */}
+				</div>
+				
 				<InfoBox>
 					<FeatureBox style={{ width: "auto" }}>
 						<DataTitle>${hour} / Hour </DataTitle>
 						<DetailBox>
-						<Li>4 Hours Minimum</Li>
-						<Li>${fourHours} / 4 Hours </Li>
-						<Li>${eightHours} / 8 Hours </Li>
+							<Li>4 Hours Minimum</Li>
+							<Li>${fourHours} / 4 Hours </Li>
+							<Li>${eightHours} / 8 Hours </Li>
 						</DetailBox>
-					
-               </FeatureBox>
+					</FeatureBox>
 					<FeatureBox style={{ width: "auto" }}>
 						<DataTitle>Features</DataTitle>
 						<DetailBox>
@@ -325,14 +323,15 @@ export default function GameDetail() {
 					<FeatureBox style={{ width: "auto" }}>
 						<DataTitle>Services</DataTitle>
 						<DetailBox>
-                     {services && services.map((e)=>(<Li key={e} >{e}</Li>))}
+							{services && services.map((e) => <Li key={e}>{e}</Li>)}
 						</DetailBox>
 					</FeatureBox>
-					<FeatureBox style={{ width: "auto", margin:0 }}>
+					<FeatureBox style={{ width: "auto", margin: 0 }}>
 						<DataTitle>Description</DataTitle>
 						<TextBox>{description}</TextBox>
 					</FeatureBox>
 				</InfoBox>
+				{setTimeout( window.scrollTo(0, 0) , 4000)}
 				<Box
 					style={{
 						width: "100vw",
