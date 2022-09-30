@@ -143,7 +143,7 @@ export const Li = styled('li')`
 `;
 
 export const TextBox = styled(Box)`
-min-width: 49vw;
+min-width: 49%;
 height: auto;
    font-size: 1.2rem;
    text-align: justify;
@@ -158,14 +158,14 @@ height: auto;
 `;
 
 export const CarPic = styled(Box)`
-   width: 80vw;
+   width: 80%;
    height: 50vh;
    background-size: cover;
    background-position-y: 50%;
 `;
 
 export const ChatBox = styled(Box)`
-   width: 30vw;
+   width: 30%
    height: 100vh;
    background-color: black;
 `;

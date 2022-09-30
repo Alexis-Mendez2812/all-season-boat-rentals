@@ -39,8 +39,8 @@ import io from "socket.io-client";
 import './CardDetail.css'
 
 
-// const socket = io.connect('https://yachtimeapp.herokuapp.com');
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect('https://yachtimeapp.herokuapp.com');
+// const socket = io.connect("http://localhost:3001");
 
 export default function GameDetail() {
 	
@@ -58,70 +58,70 @@ export default function GameDetail() {
 	const [room, setRoom] = useState("");
 	const [boatOwner, setboatOwner] = useState("");
 
-	useEffect(() => {
-		dispatch(getIdYate(id));
-		dispatch(vaciar());
-		dispatch(getAllUsers());
-	}, []);
+	// useEffect(() => {
+	// 	dispatch(getIdYate(id));
+	// 	dispatch(vaciar());
+	// 	dispatch(getAllUsers());
+	// }, []);
 
-	useEffect(() => {
-		if (Object.keys(users).length > 0) {
-			for (let i = 0; i < users.length; i++) {
-				if (users[i].Products.length > 0) {
-					for (let j = 0; j < users[i].Products.length; j++) {
-						if (users[i].Products[j].id === id) {
-							setRoom(`${users[i].userName}${userSession.userName}`);
-							setboatOwner(users[i].id);
-							break;
-						}
-					}
-				}
-			}
-		}
-	}, [users]);
+	// useEffect(() => {
+	// 	if (Object.keys(users).length > 0) {
+	// 		for (let i = 0; i < users.length; i++) {
+	// 			if (users[i].Products.length > 0) {
+	// 				for (let j = 0; j < users[i].Products.length; j++) {
+	// 					if (users[i].Products[j].id === id) {
+	// 						setRoom(`${users[i].userName}${userSession.userName}`);
+	// 						setboatOwner(users[i].id);
+	// 						break;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }, [users]);
 
-	useEffect(() => {
-		socket.on("receive_message", (data) => {
-			setAllMessages([...allMessages, data]);
-		});
-	});
+	// useEffect(() => {
+	// 	socket.on("receive_message", (data) => {
+	// 		setAllMessages([...allMessages, data]);
+	// 	});
+	// });
 
-	useEffect(() => {
-		if (
-			typeof userSession.id !== "undefined" &&
-			typeof boatOwner !== "undefined"
-		) {
-			bringAllMessages({ owner: userSession.id, receptor: boatOwner })
-				.then((ans) => {
-					if (Object.keys(ans).length) {
-						const ok = (
-							ans.allOwnerMessages && ans.allReceptorMessages
-								? ans.allOwnerMessages.concat(ans.allReceptorMessages)
-								: ans.allOwnerMessages
-								? ans.allOwnerMessages
-								: ans.allReceptorMessages
-						)
-							.sort((x, y) => {
-								if (x.id > y.id) {
-									return 1;
-								}
-								if (x.id < y.id) {
-									return -1;
-								}
-								return 0;
-							})
-							.map((m) => {
-								return m.message;
-							});
-						setAllMessages(ok);
-						console.log(ans);
-					}
-				})
-				.catch(() => {
-					console.log("HUBO PROBLEMA");
-				});
-		}
-	}, [userSession.id, boatOwner]);
+	// useEffect(() => {
+	// 	if (
+	// 		typeof userSession.id !== "undefined" &&
+	// 		typeof boatOwner !== "undefined"
+	// 	) {
+	// 		bringAllMessages({ owner: userSession.id, receptor: boatOwner })
+	// 			.then((ans) => {
+	// 				if (Object.keys(ans).length) {
+	// 					const ok = (
+	// 						ans.allOwnerMessages && ans.allReceptorMessages
+	// 							? ans.allOwnerMessages.concat(ans.allReceptorMessages)
+	// 							: ans.allOwnerMessages
+	// 							? ans.allOwnerMessages
+	// 							: ans.allReceptorMessages
+	// 					)
+	// 						.sort((x, y) => {
+	// 							if (x.id > y.id) {
+	// 								return 1;
+	// 							}
+	// 							if (x.id < y.id) {
+	// 								return -1;
+	// 							}
+	// 							return 0;
+	// 						})
+	// 						.map((m) => {
+	// 							return m.message;
+	// 						});
+	// 					setAllMessages(ok);
+	// 					console.log(ans);
+	// 				}
+	// 			})
+	// 			.catch(() => {
+	// 				console.log("HUBO PROBLEMA");
+	// 			});
+	// 	}
+	// }, [userSession.id, boatOwner]);
 
 	const handleGoBack = () => {
 		navigate("/");
@@ -294,17 +294,52 @@ export default function GameDetail() {
 							<BackIcon onClick={handleGoBack} />
 					{/* <img src={yateSelected.pictures[0]} /> */}
 				</div>
+				<div className='infoContainer' >
+				<div className='infoBox1' >
+					<h3>${hour} / Hour</h3>
+					<ul>
+
+					<li>4 Hours Minimum</li>
+							<li>${fourHours} / 4 Hours </li>
+							<li>${eightHours} / 8 Hours </li>
+					</ul>
+				</div>
+				<div className='infoBox1' >
+					<h3>Features</h3>
+					<ul>
+
+					{year && <li>Year: {year}</li>}
+							{beam && <li>Beam: {beam}</li>}
+							{length && <li>Length: {length}</li>}
+							{guests && <li>Guests: {guests}</li>}
+							{bathrooms && <li>Toilets: {bathrooms}</li>}
+							{cabins && <li>Cabins: {cabins}</li>}
+							{draft && <li>Draft: {draft}</li>}
+							{cruiseVel && <li>CruiseVelocity: {cruiseVel}</li>}
+							{fuelCapacity && <li>FuelCapacity: {fuelCapacity}</li>}
+							{fuelType && <li>FuelType: {fuelType}</li>}
+							{waterCapacity && <li>WaterCapacity: {waterCapacity}</li>}
+					</ul>
+				</div>
+				<div className='infoBox2' >
+					<h3>Services</h3>
+					<ul>
+
+					{services && services.map((e) => <li key={e}>{e}</li>)}
+					</ul>
+				</div>
+				</div>
 				
 				<InfoBox>
-					<FeatureBox style={{ width: "auto" }}>
+					{/* <FeatureBox style={{ width: "auto" }}>
 						<DataTitle>${hour} / Hour </DataTitle>
 						<DetailBox>
 							<Li>4 Hours Minimum</Li>
 							<Li>${fourHours} / 4 Hours </Li>
 							<Li>${eightHours} / 8 Hours </Li>
 						</DetailBox>
-					</FeatureBox>
-					<FeatureBox style={{ width: "auto" }}>
+					</FeatureBox> */}
+					{/* <FeatureBox style={{ width: "auto" }}>
 						<DataTitle>Features</DataTitle>
 						<DetailBox>
 							{year && <Li>Year: {year}</Li>}
@@ -319,22 +354,16 @@ export default function GameDetail() {
 							{fuelType && <Li>FuelType: {fuelType}</Li>}
 							{waterCapacity && <Li>WaterCapacity: {waterCapacity}</Li>}
 						</DetailBox>
-					</FeatureBox>
-					<FeatureBox style={{ width: "auto" }}>
+					</FeatureBox> */}
+					{/* <FeatureBox style={{ width: "auto" }}>
 						<DataTitle>Services</DataTitle>
 						<DetailBox>
 							{services && services.map((e) => <Li key={e}>{e}</Li>)}
 						</DetailBox>
-					</FeatureBox>
-					<FeatureBox style={{ width: "auto", margin: 0 }}>
-						<DataTitle>Description</DataTitle>
-						<TextBox>{description}</TextBox>
-					</FeatureBox>
-				</InfoBox>
-				{setTimeout( window.scrollTo(0, 0) , 4000)}
-				<Box
+					</FeatureBox> */}
+					<Box
 					style={{
-						width: "100vw",
+						width: "80vw",
 						height: "70vh",
 					}}
 				>
@@ -349,6 +378,14 @@ export default function GameDetail() {
 						})}
 					</Carousel>
 				</Box>
+					<div className='infoBox2' >
+						{/* <DataTitle>Description</DataTitle> */}
+						<h3>Description</h3>
+						<TextBox>{description}</TextBox>
+					</div>
+				</InfoBox>
+				{setTimeout( window.scrollTo(0, 0) , 4000)}
+				
 				<Drawer anchor={"right"} open={open} onClose={handleOpenDrawer}>
 					<ChatBox>
 						<TextChatBox>
