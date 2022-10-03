@@ -22,6 +22,7 @@ import CardDetail from './Components/CardDetail/CardDetail.jsx';
 import ManualCard from './Components/ManualCard/ManualCard.jsx';
 import Pay from './Components/Pay/Pay.jsx';
 import Faq from './Components/Faq/Faq.jsx';
+import Test from './Components/Test/Test.jsx';
 import { UserSite } from './Components/userSite/UserSite.js';
 import { useAuth0 } from '@auth0/auth0-react';
 import { postUserGoogle } from './Redux/Actions/actions';
@@ -73,6 +74,7 @@ function App() {
                <Route path='usersite/newproduct/:id' element={<NewProduct />} />
                <Route path='/userSite' element={<UserSite />} />
                <Route path='/userSite/*' element={<UserSite />} />
+               <Route path='/test' element={<Test />} />
                {/* <Route path='/login' element={<Login />} /> */}
                {/* <Route path='/loginForm' element={<LoginForm />} /> */}
                {/* <Route path='/registerForm' element={<RegisterForm />} /> */}

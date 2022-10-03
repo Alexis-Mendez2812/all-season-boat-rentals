@@ -1,0 +1,12 @@
+.containerTest {
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+img {
+	margin: 5px;
+}

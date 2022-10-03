@@ -51,12 +51,12 @@ export default function CardHomeYate() {
 
    return (
       <Box>
-         <Box style={{ width: '100%' }}>
+         {/* <Box style={{ width: '100%' }}>
             <Filtros
                setCurrentPage={setCurrentPage}
                setCharging={setCharging}
             />
-         </Box>
+         </Box> */}
          {charging ? (
             <ChargingContainer>
                <CircularProgress color='info' size={100} />;
