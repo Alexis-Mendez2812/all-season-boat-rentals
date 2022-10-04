@@ -36,14 +36,12 @@ import {
 import { Box, TextField } from "@mui/material";
 import { getIdYate, vaciar } from "../../Redux/Actions/actions";
 import io from "socket.io-client";
-import './CardDetail.css'
-
+import "./CardDetail.css";
 
 const socket = io.connect('https://yachtimeapp.herokuapp.com');
 // const socket = io.connect("http://localhost:3001");
 
 export default function GameDetail() {
-	
 	const { id } = useParams();
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
@@ -275,40 +273,37 @@ export default function GameDetail() {
 		//    </>
 		// );
 		console.log(yateSelected);
-		
-		
+
 		return (
 			<>
 				<div className="div-Navbar">
 					<Navbar />
 				</div>
-				<div className="div-header" 
-				style={{
-					backgroundImage: `url(${yateSelected.pictures[0]})`,
-					
-				}}
+				<div
+					className="div-header"
+					style={{
+						backgroundImage: `url(${yateSelected.pictures[0]})`,
+					}}
 				>
-							<DataGraphy>
-								{yateSelected.model}' {yateSelected.make}
-							</DataGraphy>
-							<BackIcon onClick={handleGoBack} />
+					<DataGraphy>
+						{yateSelected.model}' {yateSelected.make}
+					</DataGraphy>
+					<BackIcon onClick={handleGoBack} />
 					{/* <img src={yateSelected.pictures[0]} /> */}
 				</div>
-				<div className='infoContainer' >
-				<div className='infoBox1' >
-					<h3>${hour} / Hour</h3>
-					<ul>
-
-					<li>4 Hours Minimum</li>
+				<div className="infoContainer">
+					<div className="infoBox1">
+						<h3>${hour} / Hour</h3>
+						<ul>
 							<li>${fourHours} / 4 Hours </li>
 							<li>${eightHours} / 8 Hours </li>
-					</ul>
-				</div>
-				<div className='infoBox1' >
-					<h3>Features</h3>
-					<ul>
-
-					{year && <li>Year: {year}</li>}
+							<li>4 Hours Minimum</li>
+						</ul>
+					</div>
+					<div className="infoBox1">
+						<h3>Features</h3>
+						<ul>
+							{year && <li>Year: {year}</li>}
 							{beam && <li>Beam: {beam}</li>}
 							{length && <li>Length: {length}</li>}
 							{guests && <li>Guests: {guests}</li>}
@@ -319,17 +314,28 @@ export default function GameDetail() {
 							{fuelCapacity && <li>FuelCapacity: {fuelCapacity}</li>}
 							{fuelType && <li>FuelType: {fuelType}</li>}
 							{waterCapacity && <li>WaterCapacity: {waterCapacity}</li>}
-					</ul>
+						</ul>
+					</div>
+					<div className="infoBox2">
+						<h3>Services</h3>
+						<ul>{services && services.map((e) => <li key={e}>{e}</li>)}</ul>
+					</div>
+					<div className="infoBox2">
+						{/* <DataTitle>Description</DataTitle> */}
+						<h3>Description</h3>
+						<p>{description}</p>
+					</div>
 				</div>
-				<div className='infoBox2' >
-					<h3>Services</h3>
-					<ul>
-
-					{services && services.map((e) => <li key={e}>{e}</li>)}
-					</ul>
-				</div>
-				</div>
-				
+				<Carousel interval={3500} animation="slide" duration={800}>
+							{pictures.map((item, index) => {
+								return (
+									<CarPic
+										key={index}
+										style={{ backgroundImage: `url(${item})` }}
+									/>
+								);
+							})}
+						</Carousel>
 				<InfoBox>
 					{/* <FeatureBox style={{ width: "auto" }}>
 						<DataTitle>${hour} / Hour </DataTitle>
@@ -362,30 +368,16 @@ export default function GameDetail() {
 						</DetailBox>
 					</FeatureBox> */}
 					<Box
-					style={{
-						width: "80vw",
-						height: "70vh",
-					}}
-				>
-					<Carousel interval={3500} animation="slide" duration={800}>
-						{pictures.map((item, index) => {
-							return (
-								<CarPic
-									key={index}
-									style={{ backgroundImage: `url(${item})` }}
-								/>
-							);
-						})}
-					</Carousel>
-				</Box>
-					<div className='infoBox2' >
-						{/* <DataTitle>Description</DataTitle> */}
-						<h3>Description</h3>
-						<TextBox>{description}</TextBox>
-					</div>
+						style={{
+							width: "80vw",
+							height: "70vh",
+						}}
+					>
+						
+					</Box>
 				</InfoBox>
-				{setTimeout( window.scrollTo(0, 0) , 4000)}
-				
+				{setTimeout(window.scrollTo(0, 0), 4000)}
+
 				<Drawer anchor={"right"} open={open} onClose={handleOpenDrawer}>
 					<ChatBox>
 						<TextChatBox>

@@ -158,10 +158,11 @@ height: auto;
 `;
 
 export const CarPic = styled(Box)`
-   width: 80%;
    height: 50vh;
-   background-size: cover;
+   background-size: contain ;
    background-position-y: 50%;
+   background-position-x: 50%;
+   background-repeat:no-repeat;
 `;
 
 export const ChatBox = styled(Box)`
