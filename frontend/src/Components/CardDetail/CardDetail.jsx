@@ -367,14 +367,6 @@ export default function GameDetail() {
 							{services && services.map((e) => <Li key={e}>{e}</Li>)}
 						</DetailBox>
 					</FeatureBox> */}
-					<Box
-						style={{
-							width: "80vw",
-							height: "70vh",
-						}}
-					>
-						
-					</Box>
 				</InfoBox>
 				{setTimeout(window.scrollTo(0, 0), 4000)}
 
