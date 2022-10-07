@@ -1,29 +1,35 @@
-import { CloudinaryContext, Image } from "cloudinary-react";
-import React, { useState } from "react";
-import { useEffect } from "react";
-import './test.css'
-const Test = () => {
+import React, { useEffect, useState } from 'react';
+import Carousel from "react-material-ui-carousel";
+import { CarPic,Container } from './styledComponents';
 
-
+function Test() {
 const [data,setData]= useState([])
 
-    useEffect(()=>{
-        console.log("hola")
-        fetch("http://localhost:3001/test/images").then((res)=>res.json()).then((res)=>setData(res))
-    },[])
-	return (
-		<div className='containerTest' >
-			<h1>Test Page</h1>
-			<CloudinaryContext cloudName="dnnwshf50">
-				<Image publicId="sample" width="40%" />
-				<Image publicId="sample" width="40%" />
-			</CloudinaryContext>
+useEffect(()=>{
+	console.log("hola")
+    fetch("http://localhost:3001/test/images").then((res)=>res.json()).then((res)=>setData(res))
+	
+},[])
 
-            <div>
-                {data.length>0? data.map((e)=>(<img className='data' src={e} />)) :null}
-            </div>
-		</div>
-	);
-};
 
+if(data.length>0){
+
+
+return (
+  <Container>
+<Carousel interval={3500} animation="slide" duration={800} navButtonsAlwaysInvisible={true} navButtonsAlwaysVisible={false} >
+							{data.map((item, index) => {
+								return (
+									<CarPic
+										key={index}
+										style={{ backgroundImage: `url(${item})` }}
+									/>
+								);
+							})}
+						</Carousel> 
+         </Container>)
+}else{
+	return (<><hr/></>)
+}
+}
 export default Test;
