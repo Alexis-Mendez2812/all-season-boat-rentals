@@ -8,7 +8,7 @@ const [data,setData]= useState([])
 
 useEffect(()=>{
     console.log("hola")
-    fetch("http://localhost:3001/test/images").then((res)=>res.json()).then((res)=>setData(res))
+    fetch("https://yachtimeapp.herokuapp.com/test/images").then((res)=>res.json()).then((res)=>setData(res))
 },[])
 return (
 <Carousel interval={3500} animation="slide" duration={800}
