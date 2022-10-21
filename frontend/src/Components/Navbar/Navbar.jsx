@@ -123,7 +123,7 @@ function Navbar() {
 						<li>
 							<a
 								className={style.enlace}
-								href="https://instagram.com/boatmiamirental?igshid=YmMyMTA2M2Y="
+								href="https://www.instagram.com/allseasonbyboatmiamirental/"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -250,7 +250,7 @@ function Navbar() {
 						</a>
 
 						<a
-							href="https://instagram.com/boatmiamirental?igshid=YmMyMTA2M2Y="
+							href="https://www.instagram.com/allseasonbyboatmiamirental/"
 							target="_blank"
 							rel="noreferre"
 						>

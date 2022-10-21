@@ -2,6 +2,7 @@ const { Router } = require("express");
 const { cloudinary } = require("../controllers/cloudinary");
 const axios = require("axios");
 const { Users, Products } = require(`../db`);
+const {yates} = require('../yates.json')
 // const main = require("../controllers/mailer");
 
 const router = Router();
@@ -17,6 +18,9 @@ router.get("/images", async (req, res) => {
 	// const publicIds = resources.map((file) => file.public_id);
 	const publicIds = resources.map((file) => file.url);
 	res.send(publicIds);
+});
+router.get("/datos", async (req, res) => {
+	res.send(yates);
 });
 
 router.post("/asfdf", async (req, res) => {
