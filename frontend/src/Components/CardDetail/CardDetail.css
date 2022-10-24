@@ -173,8 +173,8 @@ li {
 	}
 	.infoBox1,
 	.infoBox2 {
-		background: rgb(131,58,180);
-background: linear-gradient(122deg, rgba(131,58,180,1) 0%, rgba(0,228,255,0.9023984593837535) 58%, rgba(255,255,255,0) 100%);
+		
+		background: linear-gradient(122deg, #0096ddc7 0%, rgba(0,228,255,0.9023984593837535) 58%, rgba(255,255,255,0) 100%);
 		height: 25vh;
 		min-height: auto;
 		

@@ -14,48 +14,20 @@ return (
 <Carousel interval={3500} animation="slide" duration={800}
 navButtonsAlwaysVisible={false}
 navButtonsAlwaysInvisible={true}
+className={style.carousel}
 >
 							{data.map((item, index) => {
 								return (
-                           <>
-                           <div style={{height:"10vh"}} ></div>
-                           <CarPic
-                           key={index}
-                           style={{ backgroundImage: `url(${item})` }}
-                           
-									/>
-                           </>
+                        <img className={style.imgBanner} src={item} alt={`Banner ${item}`} key={item+index}  />
+                           // <CarPic
+                           // key={index}
+                           // style={{ backgroundImage: `url(${item})`,marginTop:"50px" }}
+									// />
                            );
                         })}
 						</Carousel> 
                         
 						)
-// 
-// 
-// 
-// 
-// 
-
-//
-//   </div>
-   // return (
-   //    <div className={style.container}>
-   //       <ul className={style.listado}>
-   //          <li className={style.eachSlide}>
-   //             <img className={style.eachImg} src={one} alt='' />
-   //          </li>
-   //          <li className={style.eachSlide}>
-   //             <img className={style.eachImg} src={one} alt='' />
-   //          </li>
-   //          <li className={style.eachSlide}>
-   //             <img className={style.eachImg} src={one} alt='' />
-   //          </li>
-   //          <li className={style.eachSlide}>
-   //             <img className={style.eachImg} src={one} alt='' />
-   //          </li>
-   //       </ul>
-   //    </div>
-   // );
 }
 
 export default BannerHome;
